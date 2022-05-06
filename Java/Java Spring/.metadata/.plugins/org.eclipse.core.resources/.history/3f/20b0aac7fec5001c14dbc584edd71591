@@ -1,0 +1,71 @@
+package com.codingdojo.choix.models;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
+import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+@Entity
+@Table(name="restrictions")
+public class Restriction {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    // Determine the user's consumption of animal products
+    private String animal = "O";
+    
+    // Determine the user's food allergies if any  
+    private String[] allergies;
+    
+    //   
+    private String religious;
+    
+    private String lifestyle;
+    
+    private String cuisine;
+
+    // This will not allow the createdAt column to be updated after creation
+    @Column(updatable=false)
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	private Date createdAt;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	private Date updatedAt;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="user_id")
+    private User user;
+    
+	// ------------------------------- CONSTRUCTORS -------------------------------   
+
+	// Empty constructor
+	
+    public Restriction() {}
+    
+	// Sets datetime when expense is created
+	@PrePersist
+	protected void onCreate() {
+		this.createdAt = new Date();
+	}
+
+	// Sets datetime when expense is updated
+	@PreUpdate
+	protected void onUpdate() {
+		this.updatedAt = new Date();
+	}
+	
+}
+	

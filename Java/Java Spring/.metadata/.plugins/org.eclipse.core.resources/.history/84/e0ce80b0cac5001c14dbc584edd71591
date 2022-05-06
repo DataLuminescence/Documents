@@ -1,0 +1,5 @@
+package com.codingdojo.choix.repositories;
+
+public interface UserRepository {
+
+}

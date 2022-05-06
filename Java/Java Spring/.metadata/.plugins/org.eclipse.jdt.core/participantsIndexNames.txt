@@ -1,0 +1,37 @@
+INDEX VERSION 1.131
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2570410593.index
+/bookClub/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4245656016.index
+/loginAndRegistration/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3993221184.index
+/omikujiForm/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/99031784.index
+/relationships/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2278155351.index
+/javabelt/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1246666714.index
+/choix/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/514365112.index
+/renderingBooks/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4046092816.index
+/dojosAndNinjas2/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2210526147.index
+/saveTravels2/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/915840054.index
+/languages/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4278670360.index
+/editTravels/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4197977247.index
+/languages2/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4282331897.index
+/dojosAndNinjas/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/482886918.index
+/americaOmikuji/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/332489791.index
+/saveTravels/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3537074881.index
+/fullCrudSaveTravels/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2951921810.index
+/allBooks/src/main/java
+/Users/leonardorobles/Documents/Java Spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/287100312.index
+/booksApi/src/main/java

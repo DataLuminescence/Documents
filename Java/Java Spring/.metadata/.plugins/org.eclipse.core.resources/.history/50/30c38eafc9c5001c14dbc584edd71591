@@ -1,0 +1,5 @@
+package com.codingdojo.choix.controllers;
+
+public class LoginController {
+
+}

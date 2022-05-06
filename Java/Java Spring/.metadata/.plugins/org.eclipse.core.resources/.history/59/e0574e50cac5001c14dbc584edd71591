@@ -1,0 +1,5 @@
+package com.codingdojo.choix.services;
+
+public class UserService {
+
+}

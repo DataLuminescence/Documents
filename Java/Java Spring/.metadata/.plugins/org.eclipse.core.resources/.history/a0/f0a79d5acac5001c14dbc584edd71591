@@ -1,0 +1,19 @@
+package com.codingdojo.choix.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.mindrot.jbcrypt.BCrypt;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.validation.BindingResult;
+
+import com.codingdojo.choix.models.Show;
+import com.codingdojo.choix.models.LoginUser;
+import com.codingdojo.choix.models.User;
+import com.codingdojo.choix.repositories.ShowRepository;
+import com.codingdojo.choix.repositories.UserRepository;
+
+public class UserService {
+
+}

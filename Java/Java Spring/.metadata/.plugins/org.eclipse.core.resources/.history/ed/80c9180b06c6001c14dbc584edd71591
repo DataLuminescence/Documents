@@ -1,0 +1,87 @@
+package com.codingdojo.choix.controllers;
+
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
+//import javax.validation.Valid;
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+//import org.springframework.validation.BindingResult;
+//import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.ModelAttribute;
+//import org.springframework.web.bind.annotation.PathVariable;
+//import org.springframework.web.bind.annotation.PostMapping;
+//import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+import com.codingdojo.choix.models.User;
+//import com.codingdojo.javabelt.models.LoginUser;
+import com.codingdojo.choix.models.Restriction;
+import com.codingdojo.choix.services.UserService;
+
+@Controller
+public class RestrictionController {
+	
+	@Autowired
+	private UserService userService;
+	
+	// Render the dashboard contents to begin navigating the site
+	@GetMapping("/dashboard")
+    public String userHome(HttpSession session, Model model) {
+    	
+    	// Use session data to obtain user information
+    	Long userId = (Long) session.getAttribute("userId");
+    	
+    	// If user id is null it means no one is logged in an we go to login/register page
+    	if(userId == null) {
+        	return "redirect:/";
+    	} 
+    		
+    	// Query the database for user who has ID provided by session data
+    	User loggedInUser = userService.findById(userId);
+    	List<Restriction> allRestrictions = userService.allRestrictions();
+    	
+    	// Pass information into dashboard.jsp so we can display user name
+		model.addAttribute("loggedInUser", loggedInUser);
+		model.addAttribute("allRestrictions", allRestrictions);
+		return "dashboard.jsp";
+    }
+	
+	
+	// Render the forms the user must user to specify their dietary restrictions
+	@GetMapping("/userinfo")
+	public String userInfo(HttpSession session, Model model) {
+		
+    	// Use session data to obtain user information
+    	Long userId = (Long) session.getAttribute("userId");
+    	
+    	// If user id is null it means no one is logged in an we go to login/register page
+    	if(userId == null) {
+        	return "redirect:/";
+    	} 
+		
+    	User loggedInUser = userService.findById(userId);
+    	
+    	// Pass information into dashboard.jsp so we can display user name
+		model.addAttribute("loggedInUser", loggedInUser);
+		return "userinfo.jsp";
+	}
+	
+	// Process the information entered by the user
+	//PostMapping("/")
+//	public String saveUserInfo(@Valid @ModelAttribute("newUser") User newUser, 
+//    BindingResult result, Model model, HttpSession session) {}
+	
+	
+	
+	
+	
+	
+	
+
+}

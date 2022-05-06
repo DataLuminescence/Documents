@@ -1,0 +1,10 @@
+package com.codingdojo.choix.models;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="allergies")
+public class Allergie {
+
+}

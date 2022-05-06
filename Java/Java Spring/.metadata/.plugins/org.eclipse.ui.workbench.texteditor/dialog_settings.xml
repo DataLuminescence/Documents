@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value=""/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="items"/>
+			<item value="title"/>
+			<item value="shows"/>
+			<item value="terms"/>
+			<item value="showshows"/>
+			<item value="show"/>
+			<item value="book"/>
+			<item value="newBook"/>
+			<item value="addbook.jsp"/>
+			<item value="books"/>
+			<item value="Book"/>
+			<item value="home"/>
+			<item value="login"/>
+			<item value="session"/>
+			<item value="Dojo"/>
+		</list>
+		<list key="replacehistory">
+			<item value="show"/>
+			<item value="addshow.jsp"/>
+			<item value="shows"/>
+			<item value="Band"/>
+			<item value="User"/>
+			<item value="UserRepository"/>
+			<item value="ninja"/>
+			<item value="Ninja"/>
+			<item value="dojo"/>
+			<item value="Dojo"/>
+			<item value="person"/>
+			<item value="Person"/>
+			<item value=""/>
+			<item value="language"/>
+			<item value="Language"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="927"/>
+		<item key="DIALOG_Y_ORIGIN" value="32"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="402"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>
